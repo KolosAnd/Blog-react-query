@@ -19,7 +19,7 @@ function App() {
             </Routes>
 
         </Router>
-        <ReactQueryDevtoolsPanel handleDragStart={true} setIsOpen={true}/>
+        <ReactQueryDevtoolsPanel handleDragStart={true}  setIsOpen={false}/>
        </QueryClientProvider>
       </div>
   );

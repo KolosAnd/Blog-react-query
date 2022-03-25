@@ -15,8 +15,8 @@ export default function PostsListView ()  {
             <div className="container">
                 <div className="posts__wrap">
                     <div className="posts__form">
-                        {/*<PostForm title={"Create user"} status={createPostsM.status}*/}
-                        {/*          onSubmit={createPostsM.mutateAsync} type="create"/>*/}
+                        <PostForm title={"Create user"} status={createPostsM.status}
+                                  onSubmit={createPostsM.mutateAsync} type="create"/>
                     </div>
                     <PostsList isFetching={fetchPostsQ.isFetching} isLoading={fetchPostsQ.isLoading}
                                isFetched={fetchPostsQ.isFetched} posts={fetchPostsQ.data}
