@@ -1,4 +1,4 @@
-import {useParams} from "react-router";
+import {useParams} from "react-router-dom";
 import {PostView} from "./PostView";
 import {PostForm} from "../postForm/PostForm";
 import {useUpdatePost} from "../../hooks/useUpdatePost";

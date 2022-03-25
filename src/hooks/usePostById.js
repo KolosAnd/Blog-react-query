@@ -1,6 +1,6 @@
 
 import {api} from "../api/api-service";
-import {useNavigate} from "react-router";
+import {useNavigate} from "react-router-dom";
 import {useQuery, useQueryClient} from "react-query";
 
 export const usePostById = postId => {

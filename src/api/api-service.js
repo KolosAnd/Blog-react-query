@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const apiUrl = 'https://jsonplaceholder.typicode.com';
+const apiUrl = 'http://localhost:5000';
 
 export const api = Object.freeze({
     async getPosts(){
