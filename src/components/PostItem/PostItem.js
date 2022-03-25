@@ -15,7 +15,7 @@ export const PostItem = (props)=> {
         client.prefetchQuery(['posts', props.post.id], () => api.getPostById(props.post.id));
     }
     return(
-        <li onMouseEnter={prefetch} key={props.post.id} className="post-item link">
+        <li key={props.post.id} className="post-item link">
             <NavLink to={`/${props.post.id}`}>{props.post.id}, {props.post.title}</NavLink>
             <button className="button" disabled={isFetching} onClick={deletePost}>delete</button>
         </li>

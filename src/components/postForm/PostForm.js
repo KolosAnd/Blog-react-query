@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {LoadingIndicator} from "../PostList/LoadingIndicator";
+
 export const PostForm = (props) =>{
     const [post,setPost] = useState(props.initialValue)
     const [isFetching, setFetching] = useState(false);

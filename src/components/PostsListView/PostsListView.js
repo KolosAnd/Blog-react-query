@@ -16,12 +16,13 @@ export default function PostsListView ()  {
                 <div className="posts__wrap">
                     <div className="posts__form">
                         <PostForm title={"Create user"} status={createPostsM.status}
-                                  onSubmit={createPostsM.mutateAsync} type="create"/>
+                                  onSubmit={createPostsM.mutateAsync} type="create"
+                                  initialValue={{}}/>
                     </div>
                     <PostsList isFetching={fetchPostsQ.isFetching} isLoading={fetchPostsQ.isLoading}
                                isFetched={fetchPostsQ.isFetched} posts={fetchPostsQ.data}
                                status={fetchPostsQ.status} error={fetchPostsQ.error}
-                               deletePost={deletePostsM.mutateAsync}/>
+                               deletePost={deletePostsM.mutateAsync} />
                 </div>
             </div>
         </section>
