@@ -5,7 +5,7 @@ import {useCreatePost} from "../../hooks/useCreatePost";
 import {useDeletePost} from "../../hooks/useDeletePost";
 import {PostsList} from "../PostList/PostList";
 
-export default function PostsListView ()  {
+function PostsListView ()  {
     const fetchPostsQ = useFetchPosts();
     const createPostsM = useCreatePost();
     const deletePostsM = useDeletePost();
@@ -29,3 +29,4 @@ export default function PostsListView ()  {
 
     )
 }
+export default PostsListView;
