@@ -4,7 +4,7 @@ import {PostForm} from "../postForm/PostForm";
 import {useUpdatePost} from "../../hooks/useUpdatePost";
 import {usePostById} from "../../hooks/usePostById";
 
-function PostByIdView() {
+export function PostByIdView() {
     const {postId} = useParams();
 
     const {data: post,status: fetchPostStatus,error} = usePostById(postId);
@@ -25,4 +25,3 @@ function PostByIdView() {
         </section>
     )
 }
-export default PostByIdView;
