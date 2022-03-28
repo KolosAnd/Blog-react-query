@@ -4,7 +4,7 @@ import {PostForm} from "../postForm/PostForm";
 import {useUpdatePost} from "../../hooks/useUpdatePost";
 import {usePostById} from "../../hooks/usePostById";
 
-export const PostByIdView = ()=> {
+export function PostByIdView() {
     const {postId} = useParams();
 
     const {data: post,status: fetchPostStatus,error} = usePostById(postId);
